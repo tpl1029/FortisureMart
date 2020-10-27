@@ -8,7 +8,8 @@
 
 <!-- Links -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link src= "./Public/Styles/custom-styles-css">
+ <link rel="stylesheet" href= "./Public/Styles/custom-styles.css">
+ 
  <!-- Links -->
 
 <!-- Scripts -->
@@ -27,26 +28,27 @@ body{
 
 </style>
 
-    <title>Document</title>
+    <title>FortisureMart</title>
     </head>
     <body>
+
 <!-- Nav Bar -->
     <div style='background-color: #06AFE3; position: sticky; top: 0;'>
-    <button class = 'btn btn-primary'>Shop</button> 
+    <button class = "btn-shop btn btn-primary">Shop</button> 
    <h1 style="text-align: center; 
-   color: blue;
-   font-weight: bold;
-   font-size: 46px;
-   margin-top: 0px
-   margin-bottom: 15px;
-   padding-top: 15px">Fortisure<span style = color:red>Mart </span></h1>
+        color: blue;
+        font-weight: bold;
+        font-size: 46px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        padding-top: 15px">Fortisure<span style = color:red>Mart </span></h1>
    
    <img
     style='float:right;
-    margin-top: 20px;
-    margin-right: 100px;
-    cursor: pointer;
-    '    src = "../FortisureMart/Public/images/shopping-cart.png">
+           margin-top: 20px;
+           margin-right: 100px;
+           cursor: pointer;'
+        src = "../FortisureMart/Public/images/shopping-cart.png">
     <hr>
     </div>
 <!-- Nav Bar -->
@@ -76,34 +78,50 @@ body{
 <!-- Card Container -->
     <div>
         <!-- Product 1 -->
-      <div>
-        <p>Fortisure Shoes</p>
-        <img src=''>
-        <p>The best shoes around</p>
-        <button>Add To Cart | $64.99</button>
+         <div class="product-card-one">
+           <p class ="product-header-text">Fortisure <span style = color:red> Shoes</span></p>
+          <img src=''>
+          <img src = './Public/images/Products/shoes-white.jpg'>
+             <p>The best shoes around</p>
+                <button class = 'btn btn-success'>Add To Cart | <span>$64.99 </span></button>
       </div><br>
+
               <!-- Product 2 -->
-              <div>
-                <p>Fortisure Shirt</p>
-                <img src=''>
-                <p>A nice fitting shirt</p>
-                <button>Add To Cart | $14.99</button>
+              <div class="product-card-two">
+                 <p class ="product-header-text">Fortisure <span style = color:red> Shirt </span></p>
+                 <img src=''>
+                 <img src = './Public/images/Products/t-shirt-black.jpg'>
+                 <p>A nice fitting shirt</p>               
+                 <button class = 'btn btn-success'>Add To Cart | <span> $14.99 </span></button>
               </div><br>
+
                       <!-- Product 3 -->
-      <div>
-        <p>Fortisure Pants</p>
-        <img src=''>
-        <p>Water resistant pants for every ocassion</p>
-        <button>Add To Cart | $19.99</button>
-      </div>
+        <div class="product-card-three">
+            <p class ="product-header-text">Fortisure <span style = color:red> Pants </span></p>
+         <img src=''>
+         <img src = './Public/images/Products/jeans-black.jpg'>
+         <p>Water resistant pants for every ocassion</p>
+         <button class = 'btn btn-success'> Add To Cart | <span> $19.99 </span></button>
+       </div>
+
     </div>
     
     <hr>
 
 <!-- Products -->
+
 <!-- Footer -->
-    <div>
-   <center> <button>Contact Us</button> </center>
+    <div class="page-footer">
+        <form action="" style="margin-left: 40%; width: 350px" >
+            <label>Full Name:</label><br>
+            <input type="text" class="form-control" placeholder="John Smith">
+            <label>Email:</label><br>
+            <input type="email" class="form-control" placeholder="example@email.com">
+            <label>How Can We Help?</label><br>
+            <textarea type="textarea" class="form-control" placeholder="Type Here"></textarea>
+            <br>
+            <input type="submit" class=" btn-contact-us btn btn-primary" value="Contact Us">
+        </form>
     </div>
 <!-- Footer -->
 
