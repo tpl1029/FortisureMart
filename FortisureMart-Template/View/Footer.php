@@ -4,7 +4,7 @@
             </div>
 
             <div class='footer-center'>
-                <form class='form-contact' action="">
+                <form class='form-contact'  action="">
                     <div class="form-row">
                         <div class="col">
                             <label>Full Name:</label>
