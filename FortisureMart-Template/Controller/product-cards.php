@@ -1,10 +1,7 @@
 <?php
 
-    //setting the column variable as the first column is 2
-    $colNum = 2;
-
     //loop to print each coupon in array
-    for($index = 0; $index < count($productInfo); $index++)
+function makeProductCard($prodName, $prodImg,  $prodType,  $prodDesc, $prodPrice, $colNum)
     {
 
         echo "
@@ -13,18 +10,17 @@
                 <p class = 'product-header-text'>
                 
                 <span> Fortisure</span>
-                <span>{$productInfo[$index][0]}</span>
+                <span>{$prodType}</span>
 
                 </p>
-                <img src='./View/Public/Images/Products/{$productInfo[$index][1]}.jpg'>
-                <p class = 'product-card-desc'>{$productInfo[$index][2]}</p>
+                <img src='./View/Public/Images/Products/{$prodImg}.png'>
+                <p class = 'product-card-desc'>{$prodName}. <br> {$prodDesc}.</p>
                 <button class='btn-add-to-cart btn btn-success'>
-                Add to Cart | <span>\${$productInfo[$index][3]}</span>
+                Add to Cart | <span>\${$prodPrice}</span>
                 </button>
             </div>
         ";
-        // increment column num
-        $colNum++;
+
     }
 
 
