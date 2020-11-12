@@ -1,7 +1,7 @@
 <?php
 
     //loop to print each coupon in array
-function makeProductCard($prodName, $prodImg,  $prodType,  $prodDesc, $prodPrice, $colNum)
+function makeProductCard($prodCode, $prodName, $prodImg,  $prodType,  $prodDesc, $prodPrice, $colNum)
     {
 
         echo "
@@ -15,9 +15,17 @@ function makeProductCard($prodName, $prodImg,  $prodType,  $prodDesc, $prodPrice
                 </p>
                 <img src='./View/Public/Images/Products/{$prodImg}.png'>
                 <p class = 'product-card-desc'>{$prodName}. <br> {$prodDesc}.</p>
-                <button class='btn-add-to-cart btn btn-success'>
-                Add to Cart | <span>\${$prodPrice}</span>
-                </button>
+
+                <form method='post' action=''>                
+                    <input name='code' value='{$prodCode}' hidden/>
+                    <input name='name' value='{$prodName}' hidden/>
+                    <input name='img' value='{$prodImg}' hidden/>
+                    <input name='price' value='{$prodPrice}' hidden/>
+                    <button type = 'submit' class='btn-add-to-cart btn btn-success'> 
+                        Add to Cart | <span>\${$prodPrice}</span>
+                    </button>
+                </form>
+               
             </div>
         ";
 
