@@ -65,9 +65,22 @@
 
         <!-- modal footer -->
                 <div class="modal-footer">
-                    <!-- second close button -->
-                    <button type="button" class="btn btn-default" 
-                    data-dismiss="modal"> Close </button>
+                    <!-- Second close button -->
+                    <!-- <button type="button" class="btn btn-default" 
+                    data-dismiss="modal"> Close </button> -->
+                    <!-- Form -->
+                        <form action="" method="post">
+                            <label for="nameInput">First Name</label>
+                            <input id = "nameInput" name="cartCustomerName" style="width: 150px;">
+
+                            <label for="idInput">ID</label>
+                            <input id = "idInput" name="cartCustomerId" style="width: 45px; margin-right: 50px;">
+                        
+                            <button type="submit" class="btn btn-primary">Purchase</button>
+                        
+                        </form>
+
+                    <!-- Form -->
                 </div>
 
         <!-- modal footer -->
