@@ -56,6 +56,7 @@
             <div class='trending-container-grid'>
                 <h2>Trending Products</h2>
 
+                <button class="btn-mid-shop btn-primary" onlick="location.href='?'"> Shop </button>
                 <?php 
 
                 $colNum = 2;

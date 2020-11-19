@@ -19,8 +19,7 @@ function makeProductCard($prodCode, $prodName, $prodImg,  $prodType,  $prodDesc,
 
                     <button type = 'submit' class='btn-add-to-cart btn btn-success' onclick=\"ajaxCard('$prodCode', '$prodName', '$prodImg', '$prodPrice')\"> 
                         Add to Cart | <span>\${$prodPrice}</span>
-                    </button>
-                
+                    </button>                
                
             </div>
         ";
